@@ -1,0 +1,45 @@
+.articles {
+    position: relative;
+    padding: 100px 8vw 70px;
+    background-color: hsl(0, 0%, 98%);
+
+    &__textbox {
+        margin-bottom: 15px;
+    }
+
+    &__card__container {
+        display: flex;
+        justify-content: space-between;
+
+        .articles__card {
+            border-radius: 10px;
+            overflow: hidden;
+            width: calc(90% / 4);
+
+
+            &__image__container {
+                display: flex;
+                height: 200px;
+
+                img {
+                    height: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__textbox {
+                padding: 20px 10px;
+                background-color: white;
+                
+                &--heading {
+                    margin: 10px 0;
+
+                    &:hover {
+                        color: hsl(136, 65%, 51%);
+                    }
+                }
+            }
+        }
+    }
+}

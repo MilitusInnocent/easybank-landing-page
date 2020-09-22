@@ -1,0 +1,28 @@
+.choose {
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    z-index: 2;
+    padding: 100px 8vw 70px;
+
+    &__textbox {
+        width: 60%;
+        margin-bottom: 60px;
+
+        &--heading {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__card__container {
+        display: flex;
+        justify-content: space-between;
+
+        .choose__card {
+            width: calc(90% / 4);
+
+            &--heading {
+                margin: 12px 0;
+            }
+        }
+    }
+}
