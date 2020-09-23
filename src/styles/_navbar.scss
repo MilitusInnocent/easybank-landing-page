@@ -18,6 +18,13 @@
             justify-content: space-between;
             width: 100% !important;
 
+            .link:hover {
+                padding-bottom: 20px;
+                color: black;
+                border-bottom: 3px solid;
+                border-bottom-color: hsl(136, 65%, 51%);
+            }
+
             li {
                 &:nth-of-type(6), &:nth-of-type(7) {
                     display: none;

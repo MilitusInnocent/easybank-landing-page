@@ -1,4 +1,5 @@
 .header {
+    background-color: hsl(0, 0%, 98%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +8,20 @@
 
     &__textbox {
         flex: 0 0 30%;
+
+        &__heading {
+            font-weight: 400;
+            color: hsl(233, 26%, 24%);
+            padding-bottom: 20px;
+        }
+
+        &__subheading {
+            padding-bottom: 20px;
+            color: hsl(233, 8%, 62%);
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 15px;
+        }
     }
 
     &__image__container {

@@ -8,7 +8,7 @@ const Header = () => (
     <div className="header">
         <div className="header__textbox">
             <h1 className="header__textbox__heading">Next generation digital banking</h1>
-            <p className="header__subheading">Take your financial life online. Your Easybank account will 
+            <p className="header__textbox__subheading">Take your financial life online. Your Easybank account will 
                 be a one-stop-shop for spending, saving, budgeting, 
                 investing, and much more.
             </p>

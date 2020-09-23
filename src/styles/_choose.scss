@@ -1,15 +1,24 @@
 .choose {
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 96%);
     position: relative;
     z-index: 2;
     padding: 100px 8vw 70px;
 
     &__textbox {
-        width: 60%;
+        width: 50%;
         margin-bottom: 60px;
+        
 
         &--heading {
+            font-weight: 400;
+            color: hsl(233, 26%, 24%);
             margin-bottom: 15px;
+        }
+
+        &--subheading {
+            color: hsl(233, 8%, 62%);
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 
@@ -21,7 +30,15 @@
             width: calc(90% / 4);
 
             &--heading {
+                font-weight: 400;
+                color: hsl(233, 26%, 24%);
                 margin: 12px 0;
+            }
+
+            &--subheading {
+                color: hsl(233, 8%, 62%);
+                font-size: 15px;
+                line-height: 20px;
             }
         }
     }

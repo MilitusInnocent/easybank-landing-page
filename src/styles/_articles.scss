@@ -1,10 +1,15 @@
 .articles {
     position: relative;
     padding: 100px 8vw 70px;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 99%);
 
     &__textbox {
         margin-bottom: 15px;
+        color: hsl(233, 26%, 24%);
+        
+        h2{
+            font-weight: 400;
+        }
     }
 
     &__card__container {
@@ -31,13 +36,28 @@
             &__textbox {
                 padding: 20px 10px;
                 background-color: white;
+                color: hsl(233, 8%, 62%);
+
+                &--author {
+                    font-size: 12px;
+                    color: hsl(233, 8%, 62%);
+                }
                 
                 &--heading {
                     margin: 10px 0;
+                    color: hsl(233, 26%, 24%);
+                    font-weight: 400;
 
                     &:hover {
                         color: hsl(136, 65%, 51%);
+                        cursor: pointer;
                     }
+                }
+
+                &--subheading {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
