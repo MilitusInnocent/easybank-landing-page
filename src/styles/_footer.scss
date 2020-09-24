@@ -62,5 +62,10 @@
         text-align: right;
         font-size: 12px;
         color: gray;
+
+        @media screen and (max-width: 850) {
+            &__copyright {font-size: 23px;}
+        }
     }
+
 }

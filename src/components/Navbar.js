@@ -10,6 +10,10 @@ const Navbar = () => {
                 <Links/>
             </div>
             <Button />
+
+            <div className="navbar--mobile">
+                <Links/>
+            </div>
         </div>
     )
 }
