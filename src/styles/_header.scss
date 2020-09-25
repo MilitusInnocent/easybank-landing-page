@@ -8,6 +8,7 @@
 
     &__textbox {
         flex: 0 0 30%;
+        z-index: 2;
 
         &__heading {
             font-weight: 400;
@@ -20,7 +21,6 @@
             color: hsl(233, 8%, 62%);
             line-height: 20px;
             font-weight: 400;
-            font-size: 12px;
         }
     }
 
