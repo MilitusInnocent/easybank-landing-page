@@ -8,7 +8,6 @@
     z-index: 5;
     height: 70px;
     
-
     &__links {
         display: flex;
         width: 350px;
@@ -39,7 +38,101 @@
         }
     }
 
-    &--mobile {
+    &__mobile {
         display: none;
+    }
+
+    .overlay {
+        display: flex;
+        position: absolute;
+        transition-delay: 400ms;
+        background-color: rgba(black, .35);
+        opacity: 0;
+        z-index: 2;
+    }
+
+    &__mobile__btn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        overflow: hidden;
+        height: 45px; width: 45px;
+        border-radius: 50%;
+
+        & > * {
+            padding: 20px;
+        }
+
+        .close { display: none }
+
+        &:hover {
+            background-color: lightgrey;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__links, .btn { display: none }
+
+        &.fixed {  
+            position: fixed;
+            width: 100%;
+        }
+
+        &__mobile { 
+            display: flex;
+            position: fixed;
+            top: 80px; left: 25px;
+            padding: 35px 20px;
+            background-color: white;
+            border-radius: 5px;
+            width: calc(100% - 50px);
+            transform: translateY(calc(-100% - 100px));
+            transition: .6s;
+            transition-delay: 450ms;
+            box-shadow: 0px 2px 4px 1px rgba(black, .15);
+            z-index: 3;
+
+            .links {
+                width: 100%;
+                text-align: center;
+
+                li {
+                    margin-bottom: 15px;
+
+                    &:nth-of-type(2) span, &:nth-of-type(6), &:nth-of-type(7) {
+                        display: none;
+                    }
+                    &:last-of-type { margin-bottom: 0 }
+                }
+            }
+
+            &.deployed {
+                transition-delay: 0ms;
+                transform: translateY(0);
+            }
+        }
+
+        &__mobile__btn {
+            display: flex;
+
+            .close {
+                &.spin {
+                    transform: rotate(360deg);
+                    transition: .85s;
+                }
+            }
+
+            &.change {
+                .open { display: none }
+                .close { display: block }
+            }
+        }
+
+        .overlay.active {
+            width: calc(100% + 16vw); height: 1000vh;
+            top: 100%; left: -8vw;
+            opacity: 1;
+        }
     }
 }
