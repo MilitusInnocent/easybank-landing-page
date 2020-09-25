@@ -62,10 +62,50 @@
         text-align: right;
         font-size: 12px;
         color: gray;
+    }
 
-        @media screen and (max-width: 850) {
-            &__copyright {font-size: 23px;}
+    @media screen and (max-width: 1023px) {
+        &__copyright {font-size: 12px;}
+
+        &__links {
+
+            ul.links {
+                grid-column-gap: 20px;
+                margin: 0 0 0 30px;
+            }
         }
+
+        &__social__logos {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__links {
+
+            ul.links {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        &__social__logos {
+            width: 50%;
+        }
+
+        button {
+            margin: 0 0 0 10px;
+            width: 150px;
+            padding: 15px;
+        }
+
+
+        &__copyright {font-size: 10px;}
     }
 
 }

@@ -43,6 +43,26 @@
         }
     }
 
+    @media screen and (max-width: 1023px) {
+        &__textbox {
+            width: 70%;
+        }
+
+        &__card__container {
+            
+            .choose__card {
+    
+                &--heading {
+                    font-size: 17px;
+                }
+    
+                &--subheading {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 767px) {
         padding: 20px;
         align-items: center;
@@ -50,6 +70,19 @@
 
         &__textbox {
             width: 100%;
+        }
+
+        &__card__container {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .choose__card {
+            width: 100%;
+
+            &--subheading {
+                padding-bottom: 30px;
+            }
         }
     }
 }
