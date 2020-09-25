@@ -42,4 +42,14 @@
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+
+        &__textbox {
+            width: 100%;
+        }
+    }
 }
